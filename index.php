@@ -28,10 +28,6 @@ echo "<script>console.log(".json_encode($_SERVER).")</script>";
 //echo $_SERVER['COMPUTERNAME'];
 //str_replace("'", "\'", json_encode($array));
 
-//MYSQL ---------------------------------------------------------
-include_once('../log.php');
-//END MYSQL -----------------------------------------------------
-
 echo "
     <form method='get'>
     <input type='text' placeholder='login usera' name='user' value=$user>
@@ -154,4 +150,3 @@ if(isset($locked) && $locked !== null && $locked !== ''){
 }   
 ?>
 <div id="content"></div>
-<div style="display:none">http://vcloud-lab.com/entries/powershell/executing-powershell-script-from-php-html-web-server</div>
